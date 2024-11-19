@@ -15,7 +15,7 @@ Iniciar la aplicación en modo desarrollo: ionic serve
 
 Esto abrirá automáticamente tu navegador predeterminado y podrás ver la aplicación en ejecución en http://localhost:8100/inicio.
 
-##**🔧 Problemas Encontrados y Soluciones**
+##🔧 **Problemas Encontrados y Soluciones**
 Durante el desarrollo de la cáscara de navegación, nos encontramos con los siguientes problemas y sus respectivas soluciones:
 
 1. Problema con la generación del proyecto en versión standalone:
@@ -31,16 +31,16 @@ Síntoma: Los colores predeterminados de Ionic no coincidían con el diseño vis
 Solución: Implementé una paleta de colores personalizada en el archivo variables.scss para hacer la interfaz más fiel al diseño original.
 
 
-##**💻 Tecnologías Usadas**
+##💻 **Tecnologías Usadas**
 Ionic: Framework para el desarrollo de aplicaciones móviles híbridas.
 Angular: Framework para el desarrollo de aplicaciones web dinámicas.
 SCSS: Lenguaje de preprocesador CSS para mejorar la organización de los estilos.
 HTML: Lenguaje de marcado para la estructura de la aplicación.
 
-##**👨‍💻 Autor**
+##👨‍💻 **Autor**
 Marco Povea: Desarrollador de la aplicación como parte de un ejercicio práctico en el curso de Programación para Dispositivos Móviles.
 
-##**📜 Licencia**
+##📜 **Licencia**
 Este proyecto está bajo la Licencia MIT. Puedes usar, modificar y distribuir el código de acuerdo con los términos de la licencia.
 
 ¡Gracias por visitar el proyecto de Farmacia Uniacc! 🚀 Si tienes alguna pregunta o sugerencia, no dudes en contactarme. 😊
