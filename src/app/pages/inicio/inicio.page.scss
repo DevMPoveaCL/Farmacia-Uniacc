@@ -1,0 +1,73 @@
+.viewport-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.offers-banner ion-card {
+    padding: 1rem;
+}
+
+.offer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.offer-text {
+    flex: 1;
+    text-align: center;
+}
+
+.offer-image img {
+    max-width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.categories ion-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.categories .category-item {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+    color: white;
+}
+
+.categories .category-item.primary {
+    background-color: var(--ion-color-primary);
+}
+
+.categories .category-item.secondary {
+    background-color: var(--ion-color-secondary);
+}
+
+.recommendations img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.extra-button {
+    text-align: center;
+    margin-top: 1rem;
+}

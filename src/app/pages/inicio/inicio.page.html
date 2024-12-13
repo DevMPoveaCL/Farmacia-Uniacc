@@ -1,10 +1,125 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Inicio</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon slot="icon-only" name="notifications-outline"></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-button expand="block" routerLink="/buscar">Ir a Marketplace</ion-button>
-</ion-content>
+<ion-content fullscreen>
+  <div class="viewport-container">
+    <div class="welcome">
+      <h1>¡Hola, Marco!</h1>
+      <ion-searchbar placeholder="Buscar"></ion-searchbar>
+    </div>
 
+    <div class="offers-banner">
+      <ion-card>
+        <ion-card-content>
+          <div class="offer-content">
+            <div class="offer-text">
+              <h2>OFERTAS</h2>
+              <p>50% descuento</p>
+              <ion-button fill="solid" color="primary" size="small">Ver Ofertas</ion-button>
+            </div>
+            <div class="offer-image">
+              <img src="assets/images/banner-ofertas.png" alt="Ofertas" />
+            </div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div class="section-header">
+      <h2>CATEGORÍAS</h2>
+      <ion-button fill="clear" size="small" color="primary">Ver todas</ion-button>
+    </div>
+    <div class="categories">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="3" class="category-item primary">
+            <ion-icon name="bandage-outline"></ion-icon>
+            <p>Medicamentos</p>
+          </ion-col>
+          <ion-col size="3" class="category-item secondary">
+            <ion-icon name="flask-outline"></ion-icon>
+            <p>Perfumería</p>
+          </ion-col>
+          <ion-col size="3" class="category-item primary">
+            <ion-icon name="fitness-outline"></ion-icon>
+            <p>Suplementos</p>
+          </ion-col>
+          <ion-col size="3" class="category-item secondary">
+            <ion-icon name="paw-outline"></ion-icon>
+            <p>Veterinaria</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div class="section-header">
+      <h2>¡Recomendaciones para ti!</h2>
+      <ion-button fill="clear" size="small" color="primary">Ver todas</ion-button>
+    </div>
+    <div class="recommendations">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="4">
+            <ion-card>
+              <img src="assets/images/med1.png" alt="Medicamento 1" />
+              <ion-card-content>
+                <h3>Metformina 850mg</h3>
+                <p>Laboratorio Chile</p>
+                <h4>$1000</h4>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col size="4">
+            <ion-card>
+              <img src="assets/images/med2.png" alt="Medicamento 2" />
+              <ion-card-content>
+                <h3>Migranol 650mg</h3>
+                <p>Laboratorio Bagó</p>
+                <h4>$3500</h4>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col size="4">
+            <ion-card>
+              <img src="assets/images/med3.png" alt="Medicamento 3" />
+              <ion-card-content>
+                <h3>Losartán 50mg</h3>
+                <p>Laboratorio Chile</p>
+                <h4>$500</h4>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div class="extra-button">
+      <ion-button expand="block" color="secondary" (click)="openHowToBuy()">¿Cómo comprar?</ion-button>
+    </div>
+  </div>
+
+  <ion-modal [isOpen]="isModalOpen" (ionModalDidDismiss)="closeModal()">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>¿Cómo comprar?</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="closeModal()">Cerrar</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <p>Para realizar una compra, sigue estos pasos:</p>
+      <ol>
+        <li>Selecciona el producto que deseas comprar.</li>
+        <li>Agrega el producto al carrito.</li>
+        <li>Procede al pago y completa tus datos.</li>
+      </ol>
+    </ion-content>
+  </ion-modal>
+</ion-content>

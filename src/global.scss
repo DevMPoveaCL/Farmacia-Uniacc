@@ -1,4 +1,3 @@
-
 // Estilo personalizado
 @import "./theme/variables.scss";
 
@@ -13,4 +12,24 @@
 
 
 
-/* @import "@ionic/angular/css/palettes/dark.system.css"; */ 
+/* @import "@ionic/angular/css/palettes/dark.system.css"; */
+
+.recommendations ion-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recommendations ion-card {
+    text-align: center;
+}
+
+.recommendations ion-card-content h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.recommendations ion-card-content h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--ion-color-primary);
+}
